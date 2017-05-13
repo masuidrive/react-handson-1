@@ -1,0 +1,8 @@
+app:
+  build: .
+  command:
+    [ "./node_modules/.bin/webpack-dev-server", "--progress", "--colors", "--hot" ]
+  ports:
+    - "8080:8080"
+  volumes:
+    - ".:/usr/src/app"
