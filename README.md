@@ -6,18 +6,19 @@
 
 下記のURLを参考にしてDocker環境をインストールしてください。
 
-- macOS
+### macOS
  - http://qiita.com/scrummasudar/items/750aa52f4e0e747eed68
-- Windows10 Pro
+
+### Windows10 Pro
  - http://qiita.com/busonx/items/849a861d8bb93c71bbe7
-- Windows
+
+### Windows
  - http://qiita.com/maemori/items/52b1639fba4b1e68fccd
  - http://qiita.com/hidekuro/items/aa83583b20db5a6857d8
- - 
+
 
 ## 2. このリポジトリをcloneする
 - `git clone https://github.com/masuidrive/react-handson-1.git`
-
 
 ## 3. 起動テストをする
 - example1ディレクトリに移動して
