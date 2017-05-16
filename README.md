@@ -27,6 +27,10 @@
 - Windows環境でDocker toolboxの人は、localhostの代わりにDocker MachineのIPアドレスを指定してください
  - `$ docker-machine ip` で表示されます
 
+## 4. ChromeのReact Developer Toolsをインストールする
+
+Google Chromeをインストールして、[React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)と[Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)をインストールしておいてください
+
 
 
 
