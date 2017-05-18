@@ -6,6 +6,8 @@
 
 (コードを短くするためにWelcomeは消します)
 
+参考: http://qiita.com/kotaroito/items/e36ebac185b6b1d8538d
+
 ```
 import React from 'react';
 import { render } from 'react-dom';
@@ -42,6 +44,8 @@ render(<App />, document.getElementById('app'));
 ```
 
 ## ボタンを配置してイベントを設置
+
+基本的にDOMから値は読まないので、入力値はイベントで受け取ります。
 
 `onClick`の中で書かれている`(event) => this.incrFoo()`は、`(function(event) { this.incrFoo() }).bind(this)`と等価です。
 
