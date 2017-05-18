@@ -37,8 +37,8 @@ class App extends React.Component {
       <div>
         <ItemList>
           <Item name="Foo" initCount={ 10 } />
-          <Item name="Bar" count={ 30 } />
-          <Item name="Buzz"/>
+          <Item name="Bar" initCount={ 30 } />
+          <Item name="Buzz" initCount={ 20 }/>
         </ItemList>
       </div>
     );
