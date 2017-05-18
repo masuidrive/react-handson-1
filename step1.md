@@ -1,6 +1,14 @@
 # StaticなReact
 
+まずは、動かないReactのページを作ります。
+プログラムというよりHTMLの代わりにJSXに慣れてください。
+
+
+
 ## JSの中に普通にHTMLが書けます
+
+JSのコードの中にいきなりタグが入ります。
+
 ```
 import React from 'react';
 import { render } from 'react-dom';
@@ -18,14 +26,33 @@ render(
 );
 ```
 
+実行されれる時、上記のコードは下記のようにコンパイルされます。
+
+```
+render(
+  React.createElement("div", null, [ 
+    React.createElement("h1", null, "リスト"),
+    React.createElement("ul", null,[
+      React.createElement("li", null, "Foo"),
+      React.createElement("li", null, "Bar"),
+      React.createElement("li", null, "Buzz")
+    ])
+  ]),
+  document.getElementById('app')
+)
+```
+
 ## 式も書けます
+
+JSX内部でも`{ ... }`で書こうと、JSの式を書くことができます。
+
 ```
 import React from 'react';
 import { render } from 'react-dom';
 
 render(
   <div>
-    <h1>{"リ" + "ス" + "ト"}</h1>
+    <h1>{ "リ" + "ス" + "ト" }</h1>
     <ul>
       <li>Foo</li>
       <li>Bar</li>
@@ -37,6 +64,11 @@ render(
 ```
 
 ## スタイルはHashで渡すし、クラス名はclassNameで
+
+コンポーネント(タグ)のアトリビュートはHTMLと同じように渡せますが、文字列型以外は`{...}`でJSのObjectとして渡します。
+
+あと`class`だけ`className`になります
+
 ```
 import React from 'react';
 import { render } from 'react-dom';
@@ -64,7 +96,10 @@ CSSは普通にHTMLに追加
 
 ## コンポーネント(タグ)は自分で作れます
 
-パラメータは第一引数で渡します。
+新しいコンポーネントを定義できます。
+
+パラメータは第一引数で渡ってきます。
+
 
 ```
 import React from 'react';
@@ -89,7 +124,9 @@ render(
 
 ## もうちょっと複雑に
 
-`{ ... }`の中に書けるのは式だけ。なのでif文は書けない
+`{ ... }`の中に書けるのは式だけ。なのでif文は書けません。
+
+`{ ... }`の中にさらにJSXを書くこともできます。
 
 ```
 import React from 'react';
