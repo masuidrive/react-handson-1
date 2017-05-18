@@ -31,6 +31,9 @@
 
 Google Chromeをインストールして、[React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)と[Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)をインストールしておいてください
 
-
+# 資料
+- [Step 1](https://github.com/masuidrive/react-handson-1/blob/master/step1.md)
+- [Step 2](https://github.com/masuidrive/react-handson-1/blob/master/step2.md)
+- [Step 3](https://github.com/masuidrive/react-handson-1/blob/master/step3.md)
 
 
